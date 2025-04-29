@@ -80,7 +80,7 @@ body{
         position: absolute;
         top: 0;
         left: -12px;
-        height: 100vh !important;
+        height: 32vh !important;
         width: 200px;
         transition: width 0.5s;
         background: $soft-peach;
@@ -185,3 +185,20 @@ body{
         width: 70% !important;
     }
 }
+
+@media (max-width: 768px) {
+    .our_services-card {
+      margin: 0 10px;
+    }
+  
+    .our_services-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .our_services-label {
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+  

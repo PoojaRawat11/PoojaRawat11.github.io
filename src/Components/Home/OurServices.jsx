@@ -10,31 +10,51 @@ import DecoImage from '../../assets/Images/DecoImages/DecoImg5.jpg';
 import LightImage from '../../assets/Images/DecoImages/DecoImg3.jpg';
 import EventImage from '../../assets/Images/FoodImages/FoodImg3.jpg';
 export default function Service(){
-    useEffect(() => {
+      useEffect(() => {
         $('.our_services_slider').slick({
           slidesToShow: 4,
           slidesToScroll: 1,
           dots: true,
           arrows: false,
-          autoplay: false,
-          autoplaySpeed: 5000,
+          autoplay: window.innerWidth < 992, // ✅ enable autoplay only for tablets/mobiles
+          autoplaySpeed: 3000,
           cssEase: 'linear',
           responsive: [
-            { breakpoint: 1200, settings: { slidesToShow: 3 } },
-            { breakpoint: 991, settings: { slidesToShow: 2 } },
-            { breakpoint: 768, settings: { slidesToShow: 1 } },
-            { breakpoint: 575, settings: { slidesToShow: 1 } },
-            { breakpoint: 480, settings: { slidesToShow: 1 } }
+            {
+              breakpoint: 1200,
+              settings: { slidesToShow: 3 }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                autoplay: true // ✅ ensure autoplay for tablets
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true // ✅ ensure autoplay for phones
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                autoplay: true
+              }
+            }
           ]
         });
-    
-        // Optional: destroy on unmount
+      
         return () => {
           if ($('.our_services_slider').hasClass('slick-initialized')) {
             $('.our_services_slider').slick('unslick');
           }
         };
       }, []);
+      
     return(
         <section className="our-services">
             <div className="container">
