@@ -16,7 +16,7 @@ export default function Service(){
           slidesToScroll: 1,
           dots: true,
           arrows: false,
-          autoplay: window.innerWidth < 992, // ✅ enable autoplay only for tablets/mobiles
+          autoplay: window.innerWidth < 992, 
           autoplaySpeed: 3000,
           cssEase: 'linear',
           responsive: [
@@ -28,14 +28,14 @@ export default function Service(){
               breakpoint: 992,
               settings: {
                 slidesToShow: 2,
-                autoplay: true // ✅ ensure autoplay for tablets
+                autoplay: true 
               }
             },
             {
               breakpoint: 768,
               settings: {
                 slidesToShow: 1,
-                autoplay: true // ✅ ensure autoplay for phones
+                autoplay: true 
               }
             },
             {
