@@ -37,14 +37,6 @@
     visibility: hidden;
     opacity: 0;
 }
-/* .single-blog-detail-card .blog-html-content  .blog-details-content {
-    color: #ffffff!important;
-    background: none!important;
-    font-family: 'Roboto', sans-serif!important;
-    font-size: 13px!important;
-    font-weight: 300!important;
-    padding: 10px 0!important;
-} */
 
 .single-blog-detail-card .blog-html-content blockquote{
     background: #01172a!important;
@@ -119,7 +111,6 @@
 
 .tab-slider .owl-stage .active{
     clipPath: polygon(0 2%, 100% 7%, 100% 100%, 0% 100%);
-   
      transform-style: preserve-3d;
     transform: perspective(1206px) rotateY(15deg); 
 }

@@ -13,21 +13,24 @@
     .left-service-box{
         height: 100%;
         display: flex;
-        flex-wrap: wrap;
-        padding: 1rem 4rem 1rem 0;
-        .main-heading{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        .main-head{
             display: flex;
             align-items: center;
-            padding: 2rem 0rem !important;
-            color: $text-deep-purple;
+            justify-content: flex-start;
         }
+    }
+    .right-service-box{
+        padding: 1rem;
     }
 }
 .main-head{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .main-heading{
     font-size: $font-size-xl;
@@ -36,10 +39,10 @@
     color: $text-deep-purple;
 }
 .main-sub-heading{
-    font-size: $font-size-md-two;
+    font-size: $font-size-md;
     font-weight: 600;
     color: $text-deep-purple;
-    padding: 1rem 0 !important;
+    padding-bottom: 1rem !important;
 }
 .sub-heading{
     font-size: 14px;
@@ -117,17 +120,17 @@
     color: $text-color-stone-000;
 }
 .events{
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
     background: linear-gradient(180deg, $soft-peach 0%, $section-soft-rose 100%);
     .event-box{
-        padding: 1rem 0 2rem 0;
+        padding: 1rem;
     }
     .event-doc {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative;
-        padding: 0 1rem;
+        padding-bottom: 1rem;
         .event-video {
             width: 100%;
             height: 100%;
@@ -145,6 +148,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 1rem;
+        padding-bottom: 1rem;
     } 
 }

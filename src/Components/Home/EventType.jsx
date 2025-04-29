@@ -25,7 +25,7 @@ export default function Events(){
                                     </div>
                                     <div className="col-md-6">
                                         <div className="event-doc">
-                                            <video class="event-video" controls playsinline>
+                                            <video class="event-video backdrop-img" controls playsinline>
                                                 <source src={WedEventVid} type="video/mp4"/>
                                                 Your browser does not support the video tag.
                                             </video>
@@ -62,7 +62,7 @@ export default function Events(){
                                     </div>
                                     <div className="col-md-6">
                                         <div className="event-doc">
-                                            <video class="event-video" controls playsinline>
+                                            <video class="event-video backdrop-img" controls playsinline>
                                                 <source src={GovEvent} type="video/mp4"/>
                                                 Your browser does not support the video tag.
                                             </video>

@@ -50,7 +50,7 @@ p, h1, h2, h3, h4, h5, ul, .row, .col-md-12{
     left: 0;
     width: 100%;
     background: linear-gradient(90deg, #FFE5B4, #FFB7C5); /* Your beautiful peach-pink gradient */
-    padding: 16px 28px;
+    padding: 8px 28px;
     z-index: 1000; /* Always stays above other content */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add a soft shadow for depth */
     letter-spacing: 0.2px;
@@ -74,15 +74,18 @@ p, h1, h2, h3, h4, h5, ul, .row, .col-md-12{
             width: 165px;
         }
     }
-    .nav-item{
-        height: 100%;
+    // .nav-item{
+    //     height: 100%;
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 10px;
             align-items: center;
             justify-content: end;
             height: 100%;
             list-style: none;
+            .d-li-none{
+                display: none;
+            }
             a {
                 color: #5D3A66; 
                 text-decoration: none;
@@ -95,7 +98,7 @@ p, h1, h2, h3, h4, h5, ul, .row, .col-md-12{
                 color: #B497BD; 
             }
         }
-    }
+    // }
 }
 .footer{
     padding: 1rem;
