@@ -1,0 +1,109 @@
+p, h1, h2, h3, h4, h5, ul, .row, .col-md-12{
+    margin: 0!important;
+    padding: 0!important;
+}
+.upper-header{
+    display: none;
+    padding: 0.45rem 1rem;
+    font-size: 0.80rem;
+    background-color: $text-color-stone-050;
+    font-weight: 500;
+    .upper-header-left{
+        display: flex;
+        justify-content: flex-start;
+        a{
+            color: $bg-color-gold-dark;
+        }
+    }
+    .upper-header-right{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            color: $text-color-stone-600;
+            padding-left: 0.45rem;
+        }
+    }
+    p{
+        color: $text-color-stone-600;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 10px!important;
+        li{
+            padding-right: 1rem;
+            border-right: 1px solid $color-light-grey;
+            margin-right: 1rem;
+            color: $bg-color-gold-dark;
+            // Remove border from last li
+            &:last-child{
+                border-right: none;
+                margin-right: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+.lower-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #FFE5B4, #FFB7C5); /* Your beautiful peach-pink gradient */
+    padding: 16px 28px;
+    z-index: 1000; /* Always stays above other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add a soft shadow for depth */
+    letter-spacing: 0.2px;
+    line-height: 1px;
+    .logo-content{
+        color: $logo-main-heading;
+        font-size: $font-size-xxxl;
+        line-height: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.6px;
+        .main-logo{
+            font-size: 24px;
+            padding-left: 2.5rem;
+        }
+        .sub-logo{
+            font-size: 18px;
+        }
+        img{
+            height: 70px;
+            width: 165px;
+        }
+    }
+    .nav-item{
+        height: 100%;
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: end;
+            height: 100%;
+            list-style: none;
+            a {
+                color: #5D3A66; 
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 18px;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+            a:hover {
+                color: #B497BD; 
+            }
+        }
+    }
+}
+.footer{
+    padding: 1rem;
+    background-color: $text-color-stone-800;
+    color: $text-color-stone-050;
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
